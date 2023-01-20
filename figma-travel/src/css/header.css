@@ -1,0 +1,315 @@
+.header {
+  background-image: linear-gradient(rgba(53, 66, 103, 0), #151824), url(../img/city.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 280px;
+}
+
+.header__topline {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-top: 5px;
+}
+.header__topline .topline__menu-button {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  float: left;
+  padding-top: 9px;
+  margin-right: 6px;
+}
+.header__topline .topline__burger {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.topline__logo {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.topline__burger-wands {
+  margin-top: 15px;
+}
+.topline__burger-wands .burger-wand {
+  margin: 0px auto;
+  height: 2px;
+  width: 12px;
+  background-color: #000000;
+  margin-bottom: 2px;
+  border-radius: 2px;
+}
+
+.wrapper__title {
+  font-size: 23px;
+  color: #ffffff;
+  max-width: 100%;
+  margin-top: 40px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.wrapper__title .wrapper__title-word {
+  display: block;
+}
+
+.wrapper__subtitle {
+  color: #ffffff;
+  max-width: 100%;
+  margin-top: 7px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.wrapper__subtitle .wrapper__subtitle-text {
+  max-width: 250px;
+  line-height: 12px;
+  font-size: 10px;
+}
+
+.wrapper__buttons {
+  max-width: 100%;
+  margin-top: 12px;
+  margin-left: 4%;
+  margin-right: 4%;
+  display: flex;
+}
+.wrapper__buttons .wrapper__button-radio {
+  display: block;
+  padding-bottom: 2px;
+  margin-right: 30px;
+  font-size: 8px;
+  color: #ffffff;
+  border-bottom: 1px solid #BFC0C5;
+}
+.wrapper__buttons .wrapper__button {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 10px;
+  border-radius: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #1B7DFF;
+  font-size: 10px;
+}
+
+@media (min-width: 320px) {
+  .topline__menu {
+    display: none;
+  }
+}
+@media (min-width: 640px) {
+  .header {
+    min-height: 350px;
+  }
+  .header .header__topline {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .wrapper__title {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .wrapper__subtitle {
+    margin-top: 10px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .wrapper__subtitle .wrapper__subtitle-text {
+    min-width: 350px;
+    line-height: 15px;
+    font-size: 12px;
+  }
+  .wrapper__buttons {
+    margin-top: 30px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .wrapper__buttons .wrapper__button-radio {
+    font-size: 14px;
+  }
+  .wrapper__buttons .wrapper__button {
+    font-size: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    min-height: 400px;
+  }
+  .header .header__topline {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .topline__burger {
+    display: none;
+  }
+  .topline__menu {
+    display: block;
+  }
+  .topline__menu .topline__menu-button {
+    margin-right: 30px;
+  }
+  .wrapper__title {
+    font-size: 40px;
+    margin-top: 70px;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .wrapper__subtitle {
+    margin-top: 15px;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .wrapper__subtitle .wrapper__subtitle-text {
+    min-width: 400px;
+    line-height: 17px;
+    font-size: 14px;
+  }
+  .wrapper__buttons {
+    margin-top: 40px;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .wrapper__buttons .wrapper__button-radio {
+    font-size: 16px;
+    margin-right: 40px;
+  }
+  .wrapper__buttons .wrapper__button {
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    min-height: 550px;
+  }
+  .header .header__topline {
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-top: 10px;
+    align-items: center;
+  }
+  .topline__logo {
+    font-size: 30px;
+  }
+  .topline__burger {
+    display: none;
+  }
+  .topline__menu {
+    display: block;
+  }
+  .topline__menu .topline__menu-button {
+    margin-right: 30px;
+    font-size: 16px;
+  }
+  .wrapper__title {
+    font-size: 45px;
+    margin-top: 90px;
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+  .wrapper__subtitle {
+    margin-top: 25px;
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+  .wrapper__subtitle .wrapper__subtitle-text {
+    min-width: 490px;
+    line-height: 19px;
+    font-size: 16px;
+  }
+  .wrapper__buttons {
+    margin-top: 60px;
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+  .wrapper__buttons .wrapper__button-radio {
+    font-size: 18px;
+    margin-right: 60px;
+    border-bottom: 3px solid #BFC0C5;
+  }
+  .wrapper__buttons .wrapper__button {
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    min-height: 962px;
+  }
+  .header .header__topline {
+    margin-left: 13%;
+    margin-right: 13%;
+    padding-top: 55px;
+    align-items: center;
+  }
+  .topline__logo {
+    font-size: 30px;
+  }
+  .topline__burger {
+    display: none;
+  }
+  .topline__menu {
+    display: block;
+  }
+  .topline__menu .topline__menu-button {
+    margin-right: 60px;
+    font-size: 18px;
+  }
+  .wrapper__title {
+    font-size: 50px;
+    margin-top: 180px;
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+  .wrapper__title .wrapper__title-word {
+    margin-top: 10px;
+  }
+  .wrapper__subtitle {
+    margin-top: 22px;
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+  .wrapper__subtitle .wrapper__subtitle-text {
+    min-width: 546px;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .wrapper__buttons {
+    margin-top: 80px;
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+  .wrapper__buttons .wrapper__button-radio {
+    font-size: 18px;
+    margin-right: 130px;
+    border-bottom: 3px solid #BFC0C5;
+  }
+  .wrapper__buttons .wrapper__button {
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
