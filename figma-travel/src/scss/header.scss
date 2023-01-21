@@ -1,142 +1,90 @@
 @import './var.scss';
 
-//<header class="header">
-
 .header {
-
   background: {
     image: linear-gradient($Linear-GradientColor), url(../img/city.jpg);
     repeat: no-repeat;
     position: center;
     size: cover;
   }
-
   min-height: 280px;
 }
-
-//<section class="header__topline">
-
 .header__topline {
   display: flex;
   justify-content: space-between;
-  max-width: 100%;
-
-  margin: {
-    left: 4%;
-    right: 4%;
-  }
-
   padding-top: 5px;
-
-
-
-  .topline__menu-button {
-    display: block;
-    text-decoration: none;
-    color: $WhiteColor;
-    float: left;
-    padding-top: 9px;
-    margin-right: 6px;
-  }
-
-  .topline__burger {
-    width: 40px;
-    height: 40px;
-    border-radius: 3px;
-    background-color: $WhiteColor;
-  }
 }
-
 .topline__logo {
-  color: $WhiteColor;
+  color: $white;
   font-size: 24px;
 }
-
-.topline__burger-wands {
-  margin-top: 15px;
-
-  .burger-wand {
-    margin: 0px auto;
-    height: 2px;
-    width: 12px;
-    background-color: $BlackColor;
-    margin-bottom: 2px;
-    border-radius: 2px;
+.topline__menu-button {
+  display: block;
+  text-decoration: none;
+  color: $white;
+  float: left;
+  padding-top: 9px;
+  margin-right: 6px;
+}
+.topline__burger {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: $white;
+  &-wands{
+    margin-top: 15px;
   }
 }
-
-//<section class="header__wrapper">
+.burger-wand {
+  margin: 0px auto;
+  height: 2px;
+  width: 12px;
+  background-color: $black;
+  margin-bottom: 2px;
+  border-radius: 2px;
+}
 .wrapper__title {
   font-size: 23px;
-  color: $WhiteColor;
-  max-width: 100%;
-
-  margin: {
-    top: 40px;
-    left: 4%;
-    right: 4%;
-  }
-
-  .wrapper__title-word {
+  color: $white;
+  margin-top: 40px;
+  &-word {
     display: block;
   }
 }
-
 .wrapper__subtitle {
-  color: $WhiteColor;
-  max-width: 100%;
+  color: $white;
+  margin-top: 7px;
 
-  margin: {
-    top: 7px;
-    left: 4%;
-    right: 4%;
-  }
-
-  .wrapper__subtitle-text {
+  &-text {
     max-width: 250px;
     line-height: 12px;
     font-size: 10px;
   }
 }
-
 .wrapper__buttons {
-  max-width: 100%;
-
-  margin: {
-    top: 12px;
-    left: 4%;
-    right: 4%;
-  }
-
+  margin-top: 12px;
   display: flex;
-
-  .wrapper__button-radio {
-    display: block;
-    padding-bottom: 2px;
-    margin-right: 30px;
-    font-size: 8px;
-    color: $WhiteColor;
-    border-bottom: 1px solid $BorderColor;
-  }
-
-  .wrapper__button {
-    text-decoration: none;
-    color: $WhiteColor;
-    margin-left: 10px;
-    border-radius: 3px;
-
-    padding: {
-      top: 4px;
-      bottom: 4px;
-      left: 8px;
-      right: 8px;
-    }
-
-    background-color: $ButtonColor;
-    font-size: 10px;
-  }
 }
-
+.wrapper__button-radio {
+  display: block;
+  padding-bottom: 2px;
+  margin-right: 30px;
+  font-size: 8px;
+  color: $white;
+  border-bottom: 1px solid $BorderColor;
+}
+.wrapper__button {
+  text-decoration: none;
+  color: $white;
+  margin-left: 10px;
+  border-radius: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: $ButtonColor;
+  font-size: 10px;
+}
 @media (min-width: 320px) {
   .topline__menu {
     display: none;
@@ -146,318 +94,205 @@
 @media (min-width: 640px) {
   .header {
     min-height: 350px;
-
-    .header__topline {
-      margin: {
-        left: 6%;
-        right: 6%;
-      }
+    &__topline {
+      margin-left: 6%;
+      margin-right: 6%;
     }
   }
-
   .wrapper__title {
     font-size: 30px;
-
-    margin: {
-      top: 60px;
-      left: 6%;
-      right: 6%;
-    }
+    margin-top: 60px;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 
   .wrapper__subtitle {
-
-    margin: {
-      top: 10px;
-      left: 6%;
-      right: 6%;
-    }
-
-    .wrapper__subtitle-text {
+    margin-top: 10px;
+    margin-left: 6%;
+    margin-right: 6%;
+    &-text {
       min-width: 350px;
       line-height: 15px;
       font-size: 12px;
-
     }
   }
-
-
   .wrapper__buttons {
-    margin: {
-      top: 30px;
-      left: 6%;
-      right: 6%;
-    }
+    margin-top: 30px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .wrapper__button-radio {
+    font-size: 14px;
+  }
 
-    .wrapper__button-radio {
-      font-size: 14px;
-    }
-
-    .wrapper__button {
-      font-size: 14px;
-
-      padding: {
-        top: 6px;
-        bottom: 6px;
-        left: 12px;
-        right: 12px;
-      }
-    }
+  .wrapper__button {
+    font-size: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
 @media (min-width: 768px) {
   .header {
     min-height: 400px;
-
-    .header__topline {
-      margin: {
-        left: 7%;
-        right: 7%;
-      }
+    &__topline {
+      margin-left: 7%;
+      margin-right: 7%;
     }
   }
-
   .topline__burger {
     display: none;
   }
-
   .topline__menu {
     display: block;
-
-    .topline__menu-button {
+    &-button {
       margin-right: 30px;
-
     }
-
   }
-
   .wrapper__title {
     font-size: 40px;
-
-    margin: {
-      top: 70px;
-      left: 7%;
-      right: 7%;
-    }
+    margin-top: 70px;
+    margin-left: 7%;
+    margin-right: 7%;
   }
-
   .wrapper__subtitle {
-
-    margin: {
-      top: 15px;
-      left: 7%;
-      right: 7%;
-    }
-
-    .wrapper__subtitle-text {
+    margin-top: 15px;
+    margin-left: 7%;
+    margin-right: 7%;
+    &-text {
       min-width: 400px;
       line-height: 17px;
       font-size: 14px;
-
     }
   }
-
-
   .wrapper__buttons {
-    margin: {
-      top: 40px;
-      left: 7%;
-      right: 7%;
-    }
-
-    .wrapper__button-radio {
-      font-size: 16px;
-      margin-right: 40px;
-    }
-
-    .wrapper__button {
-      font-size: 16px;
-
-      padding: {
-        top: 8px;
-        bottom: 8px;
-        left: 18px;
-        right: 18px;
-      }
-    }
+    margin-top: 40px;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .wrapper__button-radio {
+    font-size: 16px;
+    margin-right: 40px;
+  }
+  .wrapper__button {
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }
 
 @media (min-width: 1024px) {
   .header {
     min-height: 550px;
-
-    .header__topline {
-      margin: {
-        left: 9%;
-        right: 9%;
-      }
-
+    &__topline {
+      margin-left: 9%;
+      margin-right: 9%;
       padding-top: 10px;
       align-items: center;
     }
   }
-
   .topline__logo {
     font-size: 30px;
   }
-
-  .topline__burger {
-    display: none;
-  }
-
   .topline__menu {
-    display: block;
-
-    .topline__menu-button {
+    &-button {
       margin-right: 30px;
       font-size: 16px;
-
     }
-
   }
-
   .wrapper__title {
     font-size: 45px;
-
-    margin: {
-      top: 90px;
-      left: 9%;
-      right: 9%;
-    }
+    margin-top: 90px;
+    margin-left: 9%;
+    margin-right: 9%;
   }
-
   .wrapper__subtitle {
+    margin-top: 25px;
+    margin-left: 9%;
+    margin-right: 9%;
 
-    margin: {
-      top: 25px;
-      left: 9%;
-      right: 9%;
-    }
-
-    .wrapper__subtitle-text {
+    &-text {
       min-width: 490px;
       line-height: 19px;
       font-size: 16px;
-
     }
   }
-
-
   .wrapper__buttons {
-    margin: {
-      top: 60px;
-      left: 9%;
-      right: 9%;
-    }
-
-    .wrapper__button-radio {
-      font-size: 18px;
-      margin-right: 60px;
-      border-bottom: 3px solid $BorderColor;
-    }
-
-    .wrapper__button {
-      font-size: 20px;
-
-      padding: {
-        top: 8px;
-        bottom: 8px;
-        left: 22px;
-        right: 22px;
-      }
-    }
+    margin-top: 60px;
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+  .wrapper__button-radio {
+    font-size: 18px;
+    margin-right: 60px;
+    border-bottom: 3px solid $BorderColor;
+  }
+  .wrapper__button {
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 }
 
 @media (min-width: 1440px) {
   .header {
     min-height: 962px;
-
-    .header__topline {
-      margin: {
-        left: 13%;
-        right: 13%;
-      }
-
+    &__topline {
+      margin-left: 13%;
+      margin-right: 13%;
       padding-top: 55px;
       align-items: center;
     }
   }
-
   .topline__logo {
     font-size: 30px;
   }
-
-  .topline__burger {
-    display: none;
-  }
-
   .topline__menu {
-    display: block;
-
-    .topline__menu-button {
+    &-button {
       margin-right: 60px;
       font-size: 18px;
-
     }
-
   }
-
   .wrapper__title {
     font-size: 50px;
-
-    margin: {
-      top: 180px;
-      left: 13%;
-      right: 13%;
-    }
-
-    .wrapper__title-word {
+    margin-top: 180px;
+    margin-left: 13%;
+    margin-right: 13%;
+    &-word {
       margin-top: 10px;
     }
   }
-
   .wrapper__subtitle {
-
-    margin: {
-      top: 22px;
-      left: 13%;
-      right: 13%;
-    }
-
-    .wrapper__subtitle-text {
+    margin-top: 22px;
+    margin-left: 13%;
+    margin-right: 13%;
+    &-text {
       min-width: 546px;
       line-height: 24px;
       font-size: 16px;
-
     }
   }
-
-
   .wrapper__buttons {
-    margin: {
-      top: 80px;
-      left: 13%;
-      right: 13%;
-    }
-
-    .wrapper__button-radio {
-      font-size: 18px;
-      margin-right: 130px;
-      border-bottom: 3px solid $BorderColor;
-    }
-
-    .wrapper__button {
-      font-size: 20px;
-
-      padding: {
-        top: 12px;
-        bottom: 12px;
-        left: 40px;
-        right: 40px;
-      }
-    }
+    margin-top: 80px;
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+  .wrapper__button-radio {
+    font-size: 18px;
+    margin-right: 130px;
+    border-bottom: 3px solid $BorderColor;
+  }
+  .wrapper__button {
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
