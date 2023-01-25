@@ -90,6 +90,11 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: "Lato", sans-serif;
 }
+@media (min-width: 1440px) {
+  body {
+    background-color: #F2F2F2;
+  }
+}
 
 .header {
   background-image: linear-gradient(rgba(53, 66, 103, 0), #151824), url(../img/city.jpg);
@@ -431,6 +436,211 @@ body {
     padding-bottom: 12px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav {
+    max-width: 1262px;
+    margin: 0px auto;
+    margin-top: -210px;
+    background-color: white;
+  }
+}
+.nav-container {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+@media (min-width: 640px) {
+  .nav-container {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+@media (min-width: 768px) {
+  .nav-container {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav-container {
+    padding-left: 93px;
+    padding-right: 93px;
+  }
+}
+@media (min-width: 1440px) {
+  .nav-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 110px;
+  }
+}
+.nav__title {
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #102746;
+}
+@media (min-width: 640px) {
+  .nav__title {
+    padding-top: 15px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .nav__title {
+    font-size: 27px;
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__title {
+    font-size: 35px;
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .nav__title {
+    padding-top: 93px;
+  }
+}
+.nav__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav__card {
+  max-width: 320px;
+  padding-top: 20px;
+}
+@media (min-width: 640px) {
+  .nav__card {
+    padding-top: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .nav__card {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__card {
+    padding-top: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .nav__card {
+    padding-top: 120px;
+  }
+}
+.nav__card-picture-castle {
+  width: 33px;
+  height: 33px;
+}
+@media (min-width: 640px) {
+  .nav__card-picture-castle {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .nav__card-picture-castle {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__card-picture-castle {
+    width: 66px;
+    height: 66px;
+  }
+}
+.nav__card-title {
+  font-weight: 500px;
+  padding-top: 25px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .nav__card-title {
+    font-size: 15px;
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__card-title {
+    font-size: 18px;
+    padding-top: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .nav__card-title {
+    padding-top: 37px;
+  }
+}
+.nav__cardsubtitle {
+  max-width: 170px;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .nav__cardsubtitle {
+    max-width: 210px;
+    padding-top: 26px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__cardsubtitle {
+    max-width: 270px;
+  }
+}
+@media (min-width: 1440px) {
+  .nav__cardsubtitle {
+    max-width: 300px;
+  }
+}
+.nav__cardsubtitle-text {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+}
+@media (min-width: 768px) {
+  .nav__cardsubtitle-text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__cardsubtitle-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.nav__card-button {
+  padding-top: 10px;
+}
+@media (min-width: 768px) {
+  .nav__card-button {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__card-button {
+    padding-top: 40px;
+  }
+}
+.nav__card-button-learn {
+  text-decoration: none;
+  color: #006DFE;
+  font-size: 10px;
+}
+@media (min-width: 768px) {
+  .nav__card-button-learn {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__card-button-learn {
+    font-size: 16px;
   }
 }
 

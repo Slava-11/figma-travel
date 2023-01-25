@@ -1,3 +1,9 @@
+@import './var.scss';
+@import './mixins.scss';
+
 body {
     font-family: 'Lato', sans-serif;
+    @include for-desktop-HD{
+        background-color: $BackgroundColor ;
+    }
 }
