@@ -3,21 +3,21 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 280px;
+  padding-bottom: 50px;
 }
 @media (min-width: 640px) {
   .header {
-    min-height: 350px;
+    padding-bottom: 60px;
   }
 }
 @media (min-width: 768px) {
   .header {
-    min-height: 400px;
+    padding-bottom: 80px;
   }
 }
 @media (min-width: 1024px) {
   .header {
-    min-height: 550px;
+    padding-bottom: 120px;
   }
 }
 @media (min-width: 1440px) {
@@ -142,7 +142,7 @@
   border-radius: 2px;
 }
 .header__title {
-  font-size: 23px;
+  font-size: 29px;
   color: #ffffff;
   margin-top: 40px;
 }
@@ -180,7 +180,7 @@
 }
 .header__subtitle {
   color: #ffffff;
-  margin-top: 7px;
+  margin-top: 17px;
 }
 @media (min-width: 640px) {
   .header__subtitle {
@@ -203,9 +203,9 @@
   }
 }
 .header__subtitle-text {
-  max-width: 250px;
-  line-height: 12px;
-  font-size: 10px;
+  max-width: 315px;
+  line-height: 22px;
+  font-size: 18px;
 }
 @media (min-width: 640px) {
   .header__subtitle-text {
@@ -236,12 +236,12 @@
   }
 }
 .header__button {
-  margin-top: 12px;
-  display: flex;
+  margin-top: 20px;
 }
 @media (min-width: 640px) {
   .header__button {
     margin-top: 30px;
+    display: flex;
   }
 }
 @media (min-width: 768px) {
@@ -261,15 +261,20 @@
 }
 .header__button-radio {
   display: block;
-  padding-bottom: 2px;
-  margin-right: 30px;
-  font-size: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  max-width: 270px;
   color: #ffffff;
-  border-bottom: 1px solid #BFC0C5;
+  border-bottom: 3px solid #BFC0C5;
 }
 @media (min-width: 640px) {
   .header__button-radio {
     font-size: 14px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #BFC0C5;
   }
 }
 @media (min-width: 768px) {
@@ -295,17 +300,17 @@
 .header__button-one {
   text-decoration: none;
   color: #ffffff;
-  margin-left: 10px;
   border-radius: 3px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #1B7DFF;
-  font-size: 10px;
+  font-size: 18px;
 }
 @media (min-width: 640px) {
   .header__button-one {
+    margin-left: 10px;
     font-size: 14px;
     padding-top: 6px;
     padding-bottom: 6px;
