@@ -1,0 +1,52 @@
+@import './var.scss';
+@import './mixins.scss';
+
+.today{
+    &-container{
+    padding-left: 11px;
+    padding-right: 11px;
+    @include for-mobile {
+      padding-left: 39px;
+      padding-right: 39px;
+    }
+    @include for-tablet{
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+    @include for-desktop{
+      padding-left: 93px;
+      padding-right: 93px;
+    }
+    @include for-desktop-HD{
+      padding-left: 188px;
+      padding-right: 188px;
+    }
+    }
+    &__title{
+        font-size: 30px;
+        font-weight: 500;
+        color: $MainColor;
+    }
+    &__wand{
+        margin-top: 7px;
+        width: 220px;
+        height: 3px;
+        background-color: $MainBorderColor;
+    }
+    &__card-img{
+        position: relative;
+        &-picture{
+             max-width: 353px;
+             display: block;
+             position: absolute;
+             
+              
+        }
+    }
+    &__card-container{
+         position: absolute;
+         z-index: 1;
+         margin-bottom: 30px;
+    }
+ 
+}

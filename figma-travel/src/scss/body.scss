@@ -4,6 +4,6 @@
 body {
     font-family: 'Lato', sans-serif;
     @include for-desktop-HD{
-        background-color: $BackgroundColor ;
+        background-color: $MainBackgroundColor ;
     }
 }

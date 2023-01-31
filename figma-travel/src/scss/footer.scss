@@ -1,0 +1,83 @@
+@import './var.scss';
+@import './mixins.scss';
+
+.footer{
+    &-container{
+        margin-top: 110px;
+    }
+    &__background{
+        background: {
+            image: linear-gradient($Linear-GradientColor), url(../img/town.jpg);
+            repeat: no-repeat;
+            position: center;
+            size: cover;
+          }
+          min-height: 400px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include for-desktop{
+            min-height: 500px;
+          }
+          @include for-desktop-HD{
+            min-height: 600px;
+          }
+          &-circle{
+            width: 110px;
+            height: 110px;
+            background-color: $white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-triangle{
+                width: 0;
+                height: 0;
+                border: 0 solid transparent;
+                border-bottom-width: 34px;
+                border-top-width: 32px;
+                border-left: 44px solid black;
+                margin-left: 10px;
+            }
+          }
+    }
+    &__content{
+        background-color: $BackgroundColor;
+        padding-bottom: 100px;
+        @include for-mobile{
+            padding-bottom: 0px;
+            display: flex;
+            align-items: center;
+            min-height: 370px;
+        }
+    }
+    &__logo{
+        display: block;
+        margin: 0px auto;
+        padding: 30px;
+    }
+    &__list{
+        display: block;
+        max-width: 101px;
+        margin: 0px auto;
+        margin-top: 35px;
+        @include for-desktop{
+            margin-left: 10px;
+        }
+    }
+    &__additional{
+        line-height: 24px;
+        &-title{
+            text-decoration: none;
+            color: $white;
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+        &-information{
+            text-decoration: none;
+            color: $white;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+    }
+}
