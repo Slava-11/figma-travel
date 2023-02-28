@@ -1,10 +1,43 @@
+:root {
+  --Linear-GradientColor:#35426700, #151824;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: gray;
+  --MainColor: #102746;
+  --MainBackgroundColor: #F2F2F2;
+  --BorderColor: rgba(191, 192, 197, 1);
+  --HoverColor: #0a5cc6;
+  --MainButtonColor: #006DFE;
+  --BackgroundColor: rgba(14, 29, 40, 1);
+}
+
 body {
+  user-select: none;
   font-family: "Lato", sans-serif;
 }
 @media (min-width: 1440px) {
   body {
     background-color: #F2F2F2;
   }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: gray;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--BackgroundColor);
+  border-radius: 8px;
+  border: 3px solid gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #050c12;
 }
 
 /*# sourceMappingURL=body.css.map */

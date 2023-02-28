@@ -4,37 +4,52 @@
 .benefits{
     @include for-desktop-HD{
         max-width: 1262px;
-        margin: 0px auto;
-        margin-top: -210px;
-        background-color: white;
+        margin: {
+            top: -210px;
+            left: auto;
+            right: auto;
+        }
+        background-color: var(--white);
     }
     &-container {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: {
+            left: 30px;
+            right: 30px;
+        }
         @include for-mobile {
-            padding-left: 39px;
-            padding-right: 39px;
+            padding: {
+                left: 39px;
+                right: 39px;
+            }
           }
           @include for-tablet{
-            padding-left: 54px;
-            padding-right: 54px;
+            padding: {
+                left: 54px;
+                right: 54px;
+            }
           }
           @include for-desktop{
-            padding-left: 93px;
-            padding-right: 93px;
+            padding: {
+                left: 93px;
+                right: 93px;
+            }
           }
           @include for-desktop-HD{
-            padding-left: 100px;
-            padding-right: 100px;
-            padding-bottom: 110px;
+            padding: {
+                left: 100px;
+                right: 100px;
+                bottom: 110px;
+            }
           }
     }
     &__title{
         padding-top: 30px;
         font-weight: 500;
         font-size: 29px;
-        color: $MainColor;
+        color: var(--MainColor);
+        text-align: center;
         @include for-mobile{
+            text-align: left;
             padding-top: 15px;
             font-size: 25px;
         }
@@ -59,12 +74,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
         }
- 
     }
     &__card{
         max-width: 320px;
         padding-top: 50px;
+        margin: 0px auto;
         @include for-mobile{
+            margin-left: 0px;
             padding-top: 25px;
         }
         @include for-tablet{
@@ -80,14 +96,16 @@
             &-img{
                 width: 66px;
                 height: 66px;
+                display: block;
+                margin: 0px auto;
                 @include for-mobile{
+                    margin: 0px;
                     width: 40px;
                     height: 40px;
                 }
                 @include for-tablet{
                     width: 45px;
                     height: 45px;
-
                 }
                 @include for-desktop{
                     width: 66px;
@@ -99,7 +117,9 @@
             font-weight: 500px;
             padding-top: 35px;
             font-size: 18px;
+            text-align: center;
             @include for-mobile{
+                text-align: left;
                 font-size: 14px;
                 padding-top: 25px;
             }
@@ -163,8 +183,12 @@
             }
              &-learn{
                 text-decoration: none;
-                color: $MainButtonColor;
+                color: var(--MainButtonColor);
                 font-size: 16px;
+                &:hover{
+                    transition: 1s;
+                    color: var(--HoverColor);
+                  }
                 @include for-mobile{
                     font-size: 10px;
                 }

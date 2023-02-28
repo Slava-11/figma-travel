@@ -7,7 +7,7 @@
     }
     &__background{
         background: {
-            image: linear-gradient($Linear-GradientColor), url(../img/town.jpg);
+            image: linear-gradient(rgba(21, 24, 36, 0.4), rgba(21, 24, 36, 0.4)), url(../img/town.jpg);
             repeat: no-repeat;
             position: center;
             size: cover;
@@ -25,7 +25,7 @@
           &-circle{
             width: 110px;
             height: 110px;
-            background-color: $white;
+            background-color: var(--white);
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -36,13 +36,13 @@
                 border: 0 solid transparent;
                 border-bottom-width: 34px;
                 border-top-width: 32px;
-                border-left: 44px solid black;
+                border-left: 44px solid var(--black);
                 margin-left: 10px;
             }
           }
     }
     &__content{
-        background-color: $BackgroundColor;
+        background-color: var(--BackgroundColor);
         padding-bottom: 100px;
         @include for-mobile{
             padding-bottom: 0px;
@@ -59,8 +59,11 @@
     &__list{
         display: block;
         max-width: 101px;
-        margin: 0px auto;
-        margin-top: 35px;
+        margin: {
+            top: 35px;
+            left: auto;
+            right: auto;
+        }
         @include for-desktop{
             margin-left: 10px;
         }
@@ -69,15 +72,23 @@
         line-height: 24px;
         &-title{
             text-decoration: none;
-            color: $white;
+            color: var(--white);
             font-size: 18px;
             margin-bottom: 3px;
+            &:active{
+                transition: .1s;
+                color: var(--gray);
+            }
         }
         &-information{
             text-decoration: none;
-            color: $white;
+            color: var(--white);
             font-size: 16px;
             margin-bottom: 4px;
+            &:active{
+                transition: .1s;
+                color: var(--gray);
+            }
         }
     }
 }
